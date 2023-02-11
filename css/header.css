@@ -39,4 +39,9 @@
         font-weight: 700;
         text-transform: uppercase;
     }
+
+    .menu__item:hover{
+        font-size: 26px;
+        cursor:pointer;
+    }
 }
