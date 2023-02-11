@@ -1,0 +1,52 @@
+@import url("header.css");
+@import url("banner.css");
+@import url("card.css");
+@import url("clinica.css");
+@import url("equipe.css");
+@import url("footer.css");
+
+@font-face {
+    font-family: 'Mont' ;
+    src: url("../font/Montserrat/Montserrat-VariableFont_wght.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --fonte-principal: 'Mont';
+    --banner : linear-gradient( #013A71  0%, rgba(1, 58, 113, 0.53) 100%);
+    --footer: linear-gradient( 0deg, #013A71  0%, rgba(1, 58, 113, 0.53) 100%);
+    --branco: #FFFFFF;
+    --cor-primaria:#013A71;
+    --cor-secundaria: #EFF1F2;
+}   
+
+a:link {
+    text-decoration: none;
+   }
+
+body{
+    font-family:  var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cor-primaria);
+    letter-spacing: 1px;
+}
+
+.titulo{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    padding: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+
+}
+
+@media screen and ( min-width: 1280px) {
+
+    .titulo{
+        font-size: 24px;
+    }
+
+}

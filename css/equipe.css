@@ -1,0 +1,193 @@
+.equipe-line{
+  display: none;
+}
+
+.equipe__container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.equipe__texto{
+  margin: 1rem;
+  line-height: 1.5;
+}
+
+.equipe__container-img{
+  width: 90%;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.equipe__imagem{
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.equipe-medica__container{
+  width: 90%;
+  margin: 2.5rem auto;
+  background-color: var(--cor-secundaria);
+  border-radius: 10px;
+  box-shadow: 2px 8px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.equipe-medica__container-img{
+  width: 90%;
+  height: 250px;
+ padding: 1rem;
+}
+
+.equipe-medica__img{
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+
+.equipe-medica__titulo-medico{
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  padding: 1rem 1rem .5rem;
+}
+.equipe-medica__info-medico{
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  padding: 0 1rem 1rem;
+}
+
+.equipe-medica__curriculo{
+
+  padding: 1rem 1rem 1rem 2.5rem;
+  list-style-type: disc;
+
+}
+
+.equipe-medica__item{
+  margin-bottom: 1rem;
+  font-size: 14px;
+  text-align: initial;
+
+  line-height: 1.5;
+}
+
+@media screen and ( min-width: 820px) {
+
+  .equipe__container{
+     display: flex;
+     align-items: center;
+  }
+
+  .equipe__texto{
+    width: 60%;
+  }
+  .equipe__container-img{
+    width: 40%;
+  }
+  .equipe__imagem{
+    object-fit: scale-down;
+  }
+
+  .equipe-medica__container-full{
+    display: flex;
+    flex-wrap: wrap;
+
+   
+  }
+
+  .equipe-medica__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    
+  }
+
+  .equipe-medica-left-img{
+
+    grid-row: 1/4;
+    width: 80%;
+    height: 450px;
+
+  }
+
+}
+
+
+@media screen and ( min-width: 1280px) {
+ 
+  .equipe-line{
+    display: block;
+    width: 1270px;
+    margin: 3rem auto;
+    color: var(--cor-primaria);
+  }
+  .equipe__container{
+    width: 1280px;
+    margin: 0 auto;
+  }  
+
+  .equipe__texto{
+    width: 50%;
+    padding: 1rem 4rem;
+  }
+
+  .equipe__container-img{
+    width: 50%;
+  }
+
+  .equipe-medica__container-full{
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 1280px;
+    margin: 0 auto;
+  }
+
+  .equipe-medica__container{
+
+    width: 1000px;
+
+    height: auto;
+   
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto auto;
+   
+   
+  }
+  .equipe-medica__curriculo{
+    padding: 0;
+    margin: 0 4rem;
+  }
+  .equipe-medica__container-img{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  
+  }
+
+  .equipe-medica__img{
+    object-fit: contain;
+  } 
+
+  .equipe-medica-left-img{
+
+    grid-row: 1/4;
+    width: 350px;
+    height: 400px;
+    
+  }
+
+  .equipe-medica-right-img{
+    grid-column: 2/3;
+    grid-row: 1/4;
+    width: 350px;
+    height: 400px;
+
+  }
+
+}
